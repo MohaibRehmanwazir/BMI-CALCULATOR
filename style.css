@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #191919;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #408BC9;
+}
+
+#main-container{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 gray;
+}
+
+#main-container h1{
+    background-color: #095086;
+    color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    padding: 5px 40px;
+}
+
+#weight-input-div, #height-input-div{
+    margin-top: 10px;
+}
+
+#weight-input-div{
+    margin-top: 30px;
+}
+
+#weight-input-div input, #height-input-div input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #095086;
+    margin-left: 10px;
+    width: 200px;
+    padding-bottom: 3px;
+    outline: none;
+    text-align: center;
+}
+
+#weight-input-div label, #height-input-div label{
+    font-weight: 600;
+}
+
+#weight-input-div small, #height-input-div small{
+    background-color: #095086;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    margin-left: 33px;
+
+}
+
+#height-input-div small{
+    padding: 3px 13px;
+    margin-left: 35px;
+}
+
+#buttons-div{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+#buttons-div button{
+    padding: 5px 20px;
+    width: 50%;
+    background-color: #095086;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#buttons-div button:hover{
+    background-color: #408BC9;
+}
+
+#result-div p{
+    font-weight: 600;
+}
+
+#result-div p span{
+    color: #095086;
+}
+
+@media(max-width: 420px){
+    #main-container h1{
+        border-radius: 10px 10px 0 0;
+        padding: 4px 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    body{
+        padding: 15px;
+    }
+
+    #weight-input-div input, #height-input-div input{
+        width: 145px;
+    }
+
+    #height-input-div{
+        margin-top: 20px;
+    }
+
+    #buttons-div{
+        margin-top: 30px;
+    }
+
+}
